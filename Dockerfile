@@ -34,8 +34,6 @@ RUN wget --output-document=redis.tar.gz ${REDIS_DOWNLOAD_URL} \
 
 RUN pip install --upgrade wheel pip iredis
 
-#RUN /etc/init.d/redis_6379 start
-
 ENTRYPOINT ["/bin/sh", "-c"]
 
 EXPOSE 6379
