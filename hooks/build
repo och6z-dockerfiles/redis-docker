@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker build \
+    --no-cache \
+    --build-arg PYTHON_VERSION=3.6.9-slim \
+    --build-arg REDIS_VERSION=4.0.9 \
+    --file $DOCKERFILE_PATH \
+    --tag $IMAGE_NAME .
