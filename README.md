@@ -3,14 +3,14 @@
 docker build \
     --no-cache \
     --build-arg PYTHON_VERSION=3.6.9-slim \
-    --build-arg REDIS_VERSION=4.0.9 \
+    --build-arg REDIS_VERSION=5.0.8 \
     --file Dockerfile \
-    --tag image-name:latest .
+    --tag image-name:5.0.8 .
 ```
 ```bash
 docker container run \
     --interactive \
     --tty \
     --network host \
-    --name container-name och6z/redis
+    --name container-name och6z/redis:5.0.8
 ```
