@@ -12,5 +12,5 @@ docker container run \
     --interactive \
     --tty \
     --network host \
-    --name container-name och6z/redis:4.0.9
+    --name container-name och6z/redis
 ```
